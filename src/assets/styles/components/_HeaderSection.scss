@@ -1,0 +1,19 @@
+.header{
+    background:linear-gradient(to right , $darkBlue , $lightBlue);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 26px;
+    .header__heading{
+        color: #fff;
+        font-size: calc(var(--fontModifier) * (18px + (32 - 18) * ((100vw - 320px)/ (1920 - 320))));
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:767px){
+    .header{
+        height: 40vh;
+    }
+}
