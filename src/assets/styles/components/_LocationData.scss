@@ -70,11 +70,12 @@
 
 @media (max-width:1024px) {
     .location {
+        &.location--top{     top: 25vh;}
         .location__grid {
             grid-template-columns: repeat(2, 1fr);
             gap: 10px 30px;
             
-            top: 25vh;
+       
         }
 
         top: 184px;
@@ -93,11 +94,14 @@
 @media (max-width:767px) {
     .location {
         top: 29vh;
+        &.location--top{
+            top: 23vh;
+        
+        }
         .location__grid {
             grid-template-columns: repeat(1, 1fr);
             gap: 10px 30px;
-            top: 23vh;
-        
+      
         }
         .location__no-data{
             padding-top: 35px;

@@ -1,5 +1,8 @@
 <template>
-  <div class="location">
+  <div
+    class="location"
+    :class="data != null && !loading ? 'location--top' : ''"
+  >
     <div class="text-center" v-if="loading">
       <div class="spinner-border" role="status"></div>
     </div>
@@ -24,7 +27,9 @@
         <p class="location__card__value">{{ data.isp }}</p>
       </div>
     </div>
-    <p class="location__no-data" v-if="data==null && !loading">Search for any IP address or domain</p>
+    <p class="location__no-data" v-if="data == null && !loading">
+      Search for any IP address or domain
+    </p>
   </div>
 </template>
 <script>
