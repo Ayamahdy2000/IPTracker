@@ -4,6 +4,7 @@
       type="text"
       v-model="state.IPAdress"
       @blur="v.IPAdress.$touch"
+      v-on:keyup.enter="getData"
       class="form-group__input"
       placeholder="Search for any IP address or domain"
     />

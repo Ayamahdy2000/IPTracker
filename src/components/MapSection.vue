@@ -30,7 +30,7 @@ export default {
   },
   setup(props) {
     const state = reactive({
-      zoom: 4,
+      zoom: 6,
       iconWidth: 25,
       iconHeight: 40,
       marker:
@@ -48,6 +48,7 @@ export default {
     data() {
       this.state.marker = [this.data.location.lat, this.data.location.lng];
          this.state.center = [this.data.location.lat, this.data.location.lng];
+         this.state.zoom = 18
     },
   },
   computed: {

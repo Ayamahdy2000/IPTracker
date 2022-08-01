@@ -1,15 +1,15 @@
- .leaflet-bar {
-     display: none;
- }
+//  .leaflet-bar {
+//      display: none;
+//  }
 
  .map {
      height: 60vh;
      width: 100%
  }
- .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
-    touch-action: none;
-    z-index: -1 !important;
-}
+//  .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+//     touch-action: none;
+//     z-index: -1 !important;
+// }
  .leaflet-control-attribution.leaflet-control{
     display: none;
  }

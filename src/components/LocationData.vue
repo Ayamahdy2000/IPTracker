@@ -20,7 +20,7 @@
       </div>
       <div class="location__card" v-if="data && data.location">
         <p class="location__card__head">Timezone</p>
-        <p class="location__card__value">{{ data.location.timezone }}</p>
+        <p class="location__card__value">UTC {{  data.location.timezone}}</p>
       </div>
       <div class="location__card" v-if="data && data.isp">
         <p class="location__card__head">isp</p>
